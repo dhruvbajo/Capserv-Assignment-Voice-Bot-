@@ -34,46 +34,64 @@ Includes example cURL commands for testing
 
 Ensure you have the following installed:
 Python 3.10+
+
 pip
+
 virtualenv (recommended)
 
 2️⃣ Clone the Repository
 
-git clone <your-repo-url>
+git clone "https://github.com/dhruvbajo/Capserv-Assignment-Voice-Bot-"
+
 cd voice_bot
 
 3️⃣ Create and Activate Virtual Environment
+
 python -m venv venv
+
 On Windows
+
 venv\Scripts\activate
+
 On macOS/Linux
+
 source venv/bin/activate
 
 4️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 5️⃣ Run the Mock CRM Service
+
 In one terminal:
+
 uvicorn mock_crm:app --host 0.0.0.0 --port 8001 --reload
 
 6️⃣ Run the Voice Bot Service
+
 Open another terminal and run:
+
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
 7️⃣ Run Unit Tests
+
 In a new terminal:
+
 pytest -v
 
 --------------------------------------------------------------------------------------------------------------------
 📡 Example cURL Commands
 
 ✅ Lead Creation
+
 curl -X POST http://127.0.0.1:8000/bot/handle -H "Content-Type: application/json" -d "{\"transcript\":\"Create lead John Doe email john@example.com phone 9876543210 from Mumbai source Instagram\"}"
 
 ✅ Visit Scheduling
+
 curl -X POST http://127.0.0.1:8000/bot/handle -H "Content-Type: application/json" -d "{\"transcript\":\"Schedule a visit for lead 123e4567-e89b-12d3-a456-426614174000 on 10th Oct 2025 at 4 PM with notes Discuss requirements\"}"
 
 ✅ Lead Update
+
 curl -X POST http://127.0.0.1:8000/bot/handle -H "Content-Type: application/json" -d "{\"transcript\":\"Update lead 7b1b8f54-aaaa-bbbb-cccc-1234567890ab to WON notes booked unit A2\"}"
 
 ------------------------------------------------------------------------------------------------------------------------
