@@ -86,15 +86,14 @@ curl -X POST http://127.0.0.1:8000/bot/handle -H "Content-Type: application/json
 -------------------------------------------------------------------------------------------------------------------------
 
 Lead Creation curl command output:
-![Uploading image.png…]()
-
+<img width="1192" height="148" alt="image" src="https://github.com/user-attachments/assets/7e364e81-bb81-44d5-984e-30f15011d91c" />
 
 Visit schedule curl command output:
-![Uploading image.png…]()
-
+<img width="1203" height="130" alt="image" src="https://github.com/user-attachments/assets/19c112aa-6159-45c4-9a2a-49287d47253d" />
 
 Lead update curl command output:
-![Uploading image.png…]()
+<img width="1202" height="155" alt="image" src="https://github.com/user-attachments/assets/becd555d-ea01-4fd9-913a-930a77ff067d" />
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
