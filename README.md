@@ -41,7 +41,7 @@ virtualenv (recommended)
 
 2️⃣ Clone the Repository
 
-git clone "https://github.com/dhruvbajo/Capserv-Assignment-Voice-Bot-"
+git clone https://github.com/dhruvbajo/Capserv-Assignment-Voice-Bot-.git
 
 cd voice_bot
 
